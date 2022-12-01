@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --background-body: #22A39F;
+    --background-step: #222222;
+    --background-input: #434242;
+    --font-color: #ffffff;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-body);
+    font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--background-step);
+    border-radius: 5px;
+}
+
+.container {
+    width: 90%;
+    margin: 30px 0px;
+}
+
+.operadores {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: var(--background-step);
+    box-shadow: var(--background-step) 0px 10px 30px;
+}
+
+.operadores input {
+    padding: 9px;
+    height: 40px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: var(--background-input);
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.operadores button {
+    width: 120px;
+    height: 58px;
+    margin: 5px 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    background-color: var(--background-input);
+    color: var(--font-color);
+    font-family: 'Lato', sans-serif;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    color: var(--font-color);
+}
+
+.step {
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    margin: 50px 0px;
+    padding: 25px;
+    background-color: var(--background-step);
+    color: var(--font-color);
+    box-shadow: var(--background-step) 0px 10px 30px;
+}
+
+.stepTitle {
+    padding: 15px 0px;
+    font-size: 30px;
+}
+
+.stepTitle span {
+    background-color: var(--background-input);
+    padding: 5px 15px;
+    border-radius: 7px;
+}
+
+.bill-container {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.border-top {
+    border-top: 1px solid var(--font-color);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--font-color);
+}
+
+.solucion {
+    background-color: var(--background-input);
+    font-size: 18px;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .bill-container span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .bill-container span {
+        font-size: 15px;
+    }
+}
