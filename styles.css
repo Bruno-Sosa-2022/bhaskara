@@ -45,6 +45,7 @@ body {
 
 .operadores input {
     padding: 9px;
+    width: 240px;
     height: 40px;
     margin: 5px 5px;
     border-radius: 5px;
@@ -59,6 +60,7 @@ body {
 .operadores button {
     width: 120px;
     height: 58px;
+    width: 258px;
     margin: 5px 5px;
     border-radius: 5px;
     outline: none;
